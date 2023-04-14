@@ -1,0 +1,51 @@
+Escuela de futbol
+
+Poder crear formularios por cada partido nuevo y por categoria.
+Debe incluir la lista de jugadores, pudiendo estos confirmar
+presencia. Los jugadores deben poder crearse, logearse, y solo 
+editar su asistencia algun partido.
+
+los admin deben tener acceso a toda la informacion
+de los jugadores, email, telefono, padres, categorias, etc.
+
+Solo los admin podran crear los nuevos partidos, llenar la 
+lista de jugadores y eliminar los jugadores y partidos.
+-------------------------------------------
+/api/v1/players
+
+POST("/" crear jugador)
+
+GET("/" ver todos los jugadores)
+
+GET("/category/:id ver jugadores por categoria)
+
+patch("/:id" editar jugador)
+
+DELETE("/:id" eliminar jugador)
+
+MODELS 
+id
+name
+phone
+category
+email
+password
+status
+
+
+--------------------------------------
+
+/api/v1/game
+
+
+POST("/" crear partido)
+
+GET("/" ver todos los partidos de la fecha)
+
+GET("/category/:id ver partido por categorias)
+
+DELETE("/:id" eliminar partido)
+
+MODELS
+id
+date
